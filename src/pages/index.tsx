@@ -1,3 +1,6 @@
+import { ReactElement } from "react";
+import { Layout } from "@/components/layouts/Layout";
+
 export default function Home() {
   return (
     <>
@@ -5,3 +8,7 @@ export default function Home() {
     </>
   );
 }
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
+};

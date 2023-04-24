@@ -15,8 +15,7 @@ export const Layout = ({ children, title }: PropsWithChildren<Props>) => {
         <meta name="author" content="armandev" />
       </Head>
       <Navbar />
-      <h1>valee</h1>
-      <main>{children}</main>
+      <main className="p-10">{children}</main>
     </>
   );
 };
